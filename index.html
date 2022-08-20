@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypter</title>
+    <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/icons/logo.png" alt="alura-logo">
+    </header>
+    <main>
+        <section class="container-input">
+            <textarea class="container-input__tarea-encrypt" id="tarea-encrypt" cols="40" rows="6" placeholder="Enter the text here"></textarea>
+            <div class="alert">
+                <p>Only lowercase letters and no accents</p>
+            </div>
+            <div class="button-group">
+                <button type="button" class="button-group__btn-encrypt" id="btn-encrypt">Encrypt</button>
+                <button type="button" class="button-group__btn-descrypt" id="btn-descrypt">descrypt</button>
+            </div>            
+        </section>
+            
+        <section class="container-output">
+            <div class="container-board" id="board">
+                <img src="./assets/images/background.png" alt="">
+                <p class="container-board__text1">No message was found</p>
+                <p class="container-board__text2">Enter the text that you want to encrypt or descrypt</p>
+            </div>
+            <textarea class="container-output__tarea-descrypt" id="tarea-descrypt" cols="20" rows="8"></textarea>
+            <button type="button" class="container-output__btn-copy" id="btn-copy">Copy</button>
+        </section>
+        
+        <script src="./scripts/encrypt.js"></script>
+        <script src="./scripts/descrypt.js"></script>
+        <script src="./scripts/copy.js"></script>
+    </main>
+    
+</body>
+</html>

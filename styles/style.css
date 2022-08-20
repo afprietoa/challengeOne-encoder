@@ -1,0 +1,138 @@
+/* Position Box Text Several */
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E5E5E5;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+header{
+    display: flex;
+    width: 70%;
+    height: auto;
+    margin:4em 0 0 4em;
+
+}
+
+.container-input{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-right: 1em;
+}
+
+.container-input__tarea-encrypt{
+   margin: auto;
+    width: 80%;
+   height: 50%;
+   padding: 1em;
+   font-size: 1.5em;
+   font-weight: bold;
+   background-color: transparent;
+   resize: none;
+
+
+}
+.alert{
+    display: flex;
+    justify-content: center;
+    width:90%;
+    margin: 10% auto 0;
+
+}
+.alert p{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    color:#495057;
+}
+.alert p::before{
+    content: url(../assets/icons/alert.png);
+    padding-right: 1em;
+}
+
+.button-group{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+}
+.button-group__btn-encrypt,
+.button-group__btn-descrypt,
+.container-output__btn-copy{
+    display: inline-block;
+    width: 22em;
+    height:3.5em;
+    border:none;
+    margin:0 3em 1em;
+    font-weight:bold;
+    border-radius: 1.2em;
+    cursor: pointer;
+}
+.button-group__btn-encrypt{
+    background-color: #0A3871;
+    color: white;
+}
+.button-group__btn-descrypt{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border:1px solid #0A3871;
+}
+
+.container-output{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    align-content:center;
+    margin: -5em 1em 0 0;
+    width: 25%;
+    height:90hv;
+    text-align: center;    
+    background: #FFFFFF;
+    border-radius: 1em;
+}
+.container-board__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.container-board__text1{
+    padding: 1em;
+    color: #343A40;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.container-board__text2{
+    padding: 1em;
+    color: #495057;
+    font-size: 1.3em;
+}
+
+.container-output__tarea-descrypt{
+    width: 90%;
+    height: 90%;
+    font-size: 1.5em;
+    margin: auto;
+    box-shadow: 0px 12px 16px -4px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    resize: none;
+}
+.container-output__btn-copy{
+    display: inline-block;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    color: #0A3871;
+    border:1px solid #0A3871;
+    cursor: pointer;
+}
