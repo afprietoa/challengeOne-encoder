@@ -12,6 +12,7 @@ body{
 main{
     display: flex;
     flex-direction: row;
+
 }
 header{
     display: flex;
@@ -24,7 +25,7 @@ header{
 .container-input{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 65%;
     margin-right: 1em;
 }
 
@@ -111,8 +112,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    margin: auto;
+    margin: 2em auto;
+    
 }
 .container-board__text1{
     padding: 1em;
@@ -145,3 +146,4 @@ header{
     border:1px solid #0A3871;
     cursor: pointer;
 }
+
