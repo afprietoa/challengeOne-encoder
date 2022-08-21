@@ -147,3 +147,52 @@ header{
     cursor: pointer;
 }
 
+@media only screen and (max-width: 768px) {
+    main{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        align-content: center;
+    }
+    header img{
+        width: 10%;
+    }
+    .button-group{
+        display:flex;
+        flex-direction:column;
+        margin:auto;
+        margin-top: 2em; 
+        width: 95%;
+    }
+    .button-group__btn-encrypt,
+    .button-group__btn-descrypt,
+    .container-output__btn-copy{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+    .container-input__tarea-encrypt{
+        font-size: 100%;
+        margin: 10% 0 0 0;
+        width: 100%;
+    }
+    .container-output{
+        margin: auto;
+        width: 80%;
+        height:auto;
+    }
+    .container-board__img{
+        display: none;
+        margin:none;
+        
+    }
+    .container-output__btn-copy{
+        margin-top: 2em;
+    }
+    .container-output__tarea-descrypt{
+        height:auto;
+        margin: 1em 0 1em;
+    }
+}
